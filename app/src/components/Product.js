@@ -11,8 +11,8 @@ function Product(props) {
         <td> {props.product.releaseDate} </td>
         <td> {props.product.price} </td>
         <td> {props.product.starRating} </td>
-        <span> <FontAwesomeIcon icon={faPencilAlt}/>  Details</span> 
-        <span>  <FontAwesomeIcon icon={faTrash}/>   Delete</span>     
+        <span className="table-icon-text"> <FontAwesomeIcon icon={faPencilAlt} className="table-icon"/>  Details</span> 
+        <span className="table-icon-text">  <FontAwesomeIcon icon={faTrash} className="table-icon"/>   Delete</span>     
      </tr> 
       
     );

@@ -32,7 +32,7 @@ function ProductList(){
 
     return(
          <div>
-             <table>
+             <table className="table">
                  <thead>
                      <tr>
                          <th> Product </th>
