@@ -28,7 +28,7 @@ function Menu() {
                  </li>
          
                 <li>
-                    <Link to="/products" className="nav-link">
+                    <Link to="/products" className="nav-link nav-buy">
                        <FontAwesomeIcon icon={faShoppingCart} /> <span className="menu-item"> Buy</span> 
                      </Link>
                 </li>

@@ -12,7 +12,7 @@
     transition: max-width 850ms ;
     max-width: 180px;
     background-color: #d5dde7;
-   
+    overflow: hidden;
 }
 
 .box-1.active{
@@ -34,7 +34,7 @@
 }
 
 .menu-item{
-    margin-left:16px;
+    margin-left:10px;
     font-weight: bold;
 
 }
@@ -61,7 +61,7 @@
 
 .box-2{
     flex:11;
-   
+    background-color: #ecf0f6 ;
 }
 
 
@@ -95,32 +95,135 @@ ul, li {
     list-style: none;
   }
 
-tr:nth-child(even){
+.table tr:nth-child(even){
     background-color: #e1ecf5;
+    
+}
+.table tr:nth-child(odd){
+    background-color:white;   
 }
 
 
+.table{
+    margin-bottom: 0;
+    margin-left: 4px;
+   
+}
 .table td {
     border: 1px solid rgb(207, 207, 207);
     padding: 8px;
+    
   }
 
 .table th{
     text-align: center ;
+    padding:2px;
+    background-color:  #ecf0f6;
 }
 
-.nav-menu{
-    
-    max-width:140px;
-    transition: max-width 850ms ;
+.icons{
+    margin-top: 9px;
 }
 
 
 
-@media  (max-width: 768px) {
+@media (max-width: 1025px){
+.table-text{
+    display: none; 
+}
+
+.table-icon-text{
+    margin-right: 0px;
+    padding:8px 8px 8px 8px;
+}
+
+}
+
+
+
+@media (max-width: 824px) {
+
+    .nav-link{
+        max-width: 120px;
+        transition: max-width 850ms ;
+        height: 39px;
+        overflow: hidden;
+        margin-left: 5px;
+    }
+
+    .box-1.active .nav-link{
+        max-width: 50px; 
+       /* overflow: hidden;*/
+        transition: max-width 850ms ;
+    }
+  
+    .box-1.active{
+        max-width: 100%; 
+    }
+    ul{
+        display: flex;
+    }
+
+    .box-1{
+        max-width: 100%;
+        transition: 0ms;
+    }
 
     .box{
         flex-direction: column;
     }
+
+    .l-navbar{
+        display: flex;
+    }
+
+   .table thead {
+        display: none;
+    }
+
+   .table td{
+        display: block;
+        border:none;
+        padding-bottom: 0px;
+        
+    }
+
+  .table tr{
+        border:1px solid #0a71f5;
+        display: block;
+        margin-top: 20px;
+        border-radius: 20px;
+        position: relative;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .table td::before{
+        content:attr(data-headers) " : ";
+        font-weight: bold;
+    }
+ 
+    .icons{
+        position: absolute;
+        right: 0;
+        top:0;
+     }
+
+     .table-icon{
+        border-radius: 50px;
+        margin-top: 20px;
+       
+    }
+    .table-icon-text{
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+    
+
 }
 
+@media (max-width: 485px){
+    .table td::before{
+        display: none;
+    }
+
+}

@@ -13,7 +13,7 @@ function App() {
     <div className="my-container">
     <h1 className="header">Shop & User Management App</h1>
     <div className="box">
-    <div className="box-1">
+    <div className="box-1 my-col">
         <Menu/>
    </div>
 
